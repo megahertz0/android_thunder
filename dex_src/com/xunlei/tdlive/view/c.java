@@ -1,0 +1,91 @@
+package com.xunlei.tdlive.view;
+
+import android.graphics.PorterDuff.Mode;
+import android.graphics.PorterDuffXfermode;
+import android.graphics.Typeface;
+import android.view.animation.AccelerateInterpolator;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.DecelerateInterpolator;
+import android.view.animation.TranslateAnimation;
+import com.xunlei.downloadprovider.member.payment.external.PayBaseConstants;
+import com.xunlei.tdlive.aniengine.aa;
+import com.xunlei.tdlive.aniengine.y;
+import com.xunlei.tdlive.aniengine.z;
+import com.xunlei.xllib.R;
+import org.android.spdy.SpdyProtocol;
+import org.apache.commons.logging.impl.SimpleLog;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+
+// compiled from: CarSprite.java
+public class c extends a {
+    private int a;
+    private int b;
+    private int c;
+    private int d;
+    private int e;
+    private int f;
+    private int g;
+    private int h;
+    private int i;
+    private int j;
+    private int k;
+    private int l;
+    private int m;
+    private int n;
+    private int o;
+
+    public c(String str, String str2, String str3) {
+        super(str, str2, str3);
+        this.a = 0;
+        this.b = 1;
+        this.c = 2;
+        this.d = 3;
+        this.e = 4;
+        this.f = 5;
+        this.g = 6;
+        this.h = 7;
+        this.i = 8;
+        this.j = 9;
+        this.k = 10;
+        this.l = 11;
+        this.m = 12;
+        this.n = 13;
+        this.o = 14;
+        a(900, 580);
+        this.a = a(y.b("gift/car/body_sd.png"), -10.0f, 310.0f);
+        this.b = a(y.a((int) SpdyProtocol.PUBKEY_SEQ_OPEN, "gift/car/paopao/10002.png", "gift/car/paopao/10003.png", "gift/car/paopao/10004.png", "gift/car/paopao/10005.png", "gift/car/paopao/10006.png", "gift/car/paopao/10007.png", "gift/car/paopao/10008.png", "gift/car/paopao/10009.png", "gift/car/paopao/10010.png", "gift/car/paopao/10011.png", "gift/car/paopao/10012.png", "gift/car/paopao/10013.png", "gift/car/paopao/10014.png", "gift/car/paopao/10015.png", "gift/car/paopao/10016.png", "gift/car/paopao/10017.png", "gift/car/paopao/10018.png", "gift/car/paopao/10019.png", "gift/car/paopao/10020.png", "gift/car/paopao/10021.png", "gift/car/paopao/10022.png", "gift/car/paopao/10023.png", "gift/car/paopao/10024.png", "gift/car/paopao/10025.png", "gift/car/paopao/10026.png", "gift/car/paopao/10027.png", "gift/car/paopao/10028.png"), 350.0f, 0.0f);
+        this.c = a(y.a((int) R.styleable.Toolbar_navigationIcon, "gift/car/feng/1.png", "gift/car/feng/2.png"), 170.0f, 290.0f);
+        this.d = a(y.b("gift/car/f_wheel/0.png"), 268.0f, 465.0f);
+        this.e = a(y.a((int) MqttConnectOptions.CONNECTION_TIMEOUT_DEFAULT, "gift/car/f_wheel/1.png", "gift/car/f_wheel/2.png", "gift/car/f_wheel/3.png"), 268.0f, 465.0f);
+        this.f = a(y.b("gift/car/l_wheel/0.png"), 466.0f, 400.0f);
+        this.g = a(y.a((int) MqttConnectOptions.CONNECTION_TIMEOUT_DEFAULT, "gift/car/l_wheel/1.png", "gift/car/l_wheel/2.png", "gift/car/l_wheel/3.png"), 466.0f, 400.0f);
+        this.h = a(y.b("gift/car/body.png"), 20.0f, 330.0f);
+        this.i = a(y.b("gift/car/light.png"), -14.0f, 414.0f, new AlphaAnimation(0.0f, 1.0f), 200, -1, SimpleLog.LOG_LEVEL_DEBUG);
+        this.j = a(y.a((int) R.styleable.Toolbar_navigationIcon, "gift/car/mocha/1.png", "gift/car/mocha/2.png"), 345.0f, 415.0f);
+        this.k = a(y.a((int) R.styleable.Toolbar_navigationIcon, "gift/car/feng/1.png", "gift/car/feng/2.png"), 300.0f, 303.0f);
+        Animation translateAnimation = new TranslateAnimation(260.0f, 260.0f, 290.0f, 280.0f);
+        translateAnimation.setInterpolator(new AccelerateInterpolator());
+        translateAnimation.setDuration(200);
+        translateAnimation.setRepeatCount(-1);
+        translateAnimation.setRepeatMode(SimpleLog.LOG_LEVEL_DEBUG);
+        translateAnimation.start();
+        this.l = a(y.b(str2).a((int) R.styleable.AppCompatTheme_panelMenuListTheme, (int) R.styleable.AppCompatTheme_panelMenuListTheme).a(-1.0f, -1.0f), 260.0f, 290.0f, translateAnimation);
+        translateAnimation = new TranslateAnimation(355.0f, 355.0f, 288.0f, 278.0f);
+        translateAnimation.setInterpolator(new AccelerateInterpolator(1.5f));
+        translateAnimation.setDuration(300);
+        translateAnimation.setRepeatCount(-1);
+        translateAnimation.setRepeatMode(SimpleLog.LOG_LEVEL_DEBUG);
+        translateAnimation.start();
+        this.m = a(y.b(str3).a((int) R.styleable.AppCompatTheme_controlBackground, (int) R.styleable.AppCompatTheme_controlBackground).a(-1.0f, -1.0f), 355.0f, 288.0f, translateAnimation);
+        translateAnimation = new TranslateAnimation(-130.0f, 330.0f, 173.0f, 260.0f);
+        translateAnimation.setInterpolator(new DecelerateInterpolator());
+        translateAnimation.setDuration(1000);
+        translateAnimation.setRepeatCount(-1);
+        translateAnimation.setRepeatMode(1);
+        translateAnimation.start();
+        this.n = a(y.a((int) R.styleable.Toolbar_navigationIcon, "gift/car/body_lt.png").a(new PorterDuffXfermode(Mode.SRC_ATOP)), 0.0f, 173.0f, translateAnimation);
+        this.o = a(z.a(str).b(18.0f).a(2.0f, MqttConnectOptions.MQTT_VERSION_3_1, MqttConnectOptions.MQTT_VERSION_3_1, -8355712).a(Typeface.DEFAULT_BOLD).b(-1).a(0.3f, 218.0f, PayBaseConstants.HALF_OF_FLOAT, 0.0f));
+        aa.a((y) this).a(com.xunlei.tdlive.aniengine.aa.c.a(0).a(0.0f, 0.0f).a("150%p", "2%p").a(new i(this))).a(com.xunlei.tdlive.aniengine.aa.c.a(23).a(1.0f, 1.0f).a("10%p", "2%p").c(com.xunlei.tdlive.aniengine.c.e).a(new h(this))).a(com.xunlei.tdlive.aniengine.aa.c.a(40).a("2%p", "5%p").c(com.xunlei.tdlive.aniengine.c.b).a(new g(this))).a(com.xunlei.tdlive.aniengine.aa.c.a(23).a("-120%p", "20%p").c(com.xunlei.tdlive.aniengine.c.b(3.0f))).a(com.xunlei.tdlive.aniengine.aa.c.a(1).a(0.0f, 0.0f).a("-150%p", "2%p").a(new f(this))).a(com.xunlei.tdlive.aniengine.aa.c.a(24).a(-1.0f, 1.0f).a("90%p", "2%p").c(com.xunlei.tdlive.aniengine.c.e).a(new e(this))).a(com.xunlei.tdlive.aniengine.aa.c.a(40).a("98%p", "5%p").c(com.xunlei.tdlive.aniengine.c.b).a(new d(this))).a(com.xunlei.tdlive.aniengine.aa.c.a(24).a("150%p", "8%p").b(-35.0f).c(com.xunlei.tdlive.aniengine.c.b(6.0f)));
+    }
+}
